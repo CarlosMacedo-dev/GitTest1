@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JSON Practice</title>
 </head>
 <body>
-    <h1>File for testing github updated.</h1>
+    <h1>Page for Testing JSON</h1>
+    <script type="text/javascript">
+            var myJSON = [
+                {
+                    "name": "Big Corporation",
+                    "numberOfEmployees": 100000,
+                    "ceo": "Mary",
+                    "rating": 3.6
+                },
+                {
+                    "name": "Small Startup",
+                    "numberOfEmployees": 3,
+                    "ceo": null,
+                    "rating": 4.3
+                }
+            ]
+
+            // Stringify Method
+            var stringified = JSON.stringify(myJSON);
+            console.log(stringified);
+
+            // Parse Method
+            var stringJSON = '{ "firstName": "Carlos", "lastName": "Macedo", "age": 38}';
+            var myParse = JSON.parse(stringJSON);
+            console.log(myParse);
+    </script>
 </body>
 </html>
